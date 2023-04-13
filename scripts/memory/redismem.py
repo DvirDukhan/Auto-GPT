@@ -136,7 +136,7 @@ class RedisMemory(MemoryProviderSingleton):
         query = Query(base_query).return_fields(
             "data",
             "vector_score"
-        ).sort_by("vector_score").dialect(2)
+        ).paging(0, num_relevant).sort_by("vector_score").dialect(2)
         query_vector = np.array(query_embedding).astype(np.float32).tobytes()
 
         try:

@@ -67,7 +67,9 @@ Your support is greatly appreciated
 
 - [Python 3.8 or later](https://www.tutorialspoint.com/how-to-install-python-in-windows)
 - [OpenAI API key](https://platform.openai.com/account/api-keys)
-- [PINECONE API key](https://www.pinecone.io/)
+- Vector Database (either Redis or Pinecone):
+  - [Redis](https://redis.io/) loaded with RediSearch module >= 2.4
+  - [PINECONE API key](https://www.pinecone.io/)
 
 Optional:
 
